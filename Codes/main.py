@@ -2,9 +2,9 @@
 ETL-Query script
 """
 
-from mylib.extract import extract
-from mylib.transform_load import load
-from mylib.query import query
+from ETL_Source.extract import extract
+from ETL_Source.transform_load import load
+from ETL_Source.query import query
 import argparse
 
 parser = argparse.ArgumentParser(description="Extract, Transform, or Load data")

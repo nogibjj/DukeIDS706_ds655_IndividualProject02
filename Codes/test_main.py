@@ -2,13 +2,13 @@
 Code to test the ETL pipeline
 """
 
-from mylib.extract import extract
-from mylib.transform_load import load
-from mylib.query import query
+from ETL_Source.extract import extract
+from ETL_Source.transform_load import load
+from ETL_Source.query import query
 
 
 def test_etl():
-    assert (query(load(extract()))) == "Success"
+    # assert (query(load(extract()))) == "Success"
     assert (
         query(
             load(

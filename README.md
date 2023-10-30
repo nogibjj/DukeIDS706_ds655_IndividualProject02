@@ -7,13 +7,19 @@
 
 ## 1. Rust Source Code
 ## 2. Using Github Copilot
-## 3. SQLite Database
+## 3. SQLite Database 
+CRUD/ETL operations on the iris dataset are being performed using the python files (extract, transform_load, update, delete, and query) in the `ETL_Source` part of the `Codes` folder.  
 ## 4. Optimized Rust Binary
 ## 5. README
 ## 6. Github Actions
 Status badges for the workflows can be found at the top of the README file
 ## 7. Video Demo
 Repo Summary video - [Link]()
+
+
+
+
+
 
 
 Files in this repository include:
