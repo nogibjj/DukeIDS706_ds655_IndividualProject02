@@ -6,6 +6,8 @@
 
 
 ## 1. Rust Source Code
+The `main.rs` code in the `Rust_Codes` folder demonstrates Rust's syntax for declaring variables, constants, arrays, vectors, structs, enums, and functions. It also demonstrates Rust's unique features such as type inference, mutability, shadowing, and pattern matching.
+
 ## 2. Using Github Copilot
 ## 3. SQLite Database 
 CRUD/ETL operations on the iris dataset are being performed using the python files (extract, transform_load, update, delete, and query) in the `ETL_Source` part of the `Codes` folder.  
