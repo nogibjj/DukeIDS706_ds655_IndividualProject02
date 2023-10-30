@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: my-binary
-          path: \Rust_Codes/target/release/my-binary
+          path: Rust_Codes/target/release/my-binary
 
   download:
     runs-on: ubuntu-latest
@@ -34,4 +34,4 @@ jobs:
       - name: Set executable permissions
         run: chmod +x my-binary
       - name: Run binary
-        run: \Rust_Codes/target/release/my-binary
+        run: Rust_Codes/target/release/my-binary
