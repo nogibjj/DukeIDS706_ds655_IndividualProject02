@@ -1,9 +1,13 @@
 name: Build and Test
+
 on:
-  workflow_run:
-    workflows: ["Test"]
-    types:
-      - completed
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,12 +17,11 @@ jobs:
       - name: Build Rust binary
         run: cargo build --release
         working-directory: Rust_Codes
-
       - name: Create artifact
         uses: actions/upload-artifact@v2
         with:
           name: my-binary
-          path: target/release/my-binary
+          path: Rust_Codes/target/release/my-binary
 
   download:
     runs-on: ubuntu-latest
