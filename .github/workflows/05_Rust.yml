@@ -35,5 +35,5 @@ jobs:
         run: chmod +x my-binary
         working-directory: Rust_Codes
       - name: Run binary
-        run: ./my-binary
+        run: Rust_Codes/target/release/my-binary
         working-directory: Rust_Codes
