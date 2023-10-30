@@ -11,7 +11,8 @@ The `main.rs` code in the `Rust_Codes` folder demonstrates Rust's syntax for dec
 ## 2. Using Github Copilot
 ## 3. SQLite Database 
 CRUD/ETL operations on the iris dataset are being performed using the python files (extract, transform_load, update, delete, and query) in the `ETL_Source` part of the `Codes` folder.  
-## 4. Optimized Rust Binary [Download Binary](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/releases/latest/download/my-binary)
+## 4. Optimized Rust Binary 
+[Download Binary](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/Rust_Codes/target/release/my-binary)
 
 To use this project, follow these steps:
 
