@@ -39,7 +39,8 @@
 				"ms-python.vscode-pylance",
 				"github.copilot",
 				"ms-vscode.makefile-tools",
-				"ms-vscode-remote.remote-containers"
+				"ms-vscode-remote.remote-containers",
+                "rust-lang.rust-analyzer"
 			]
         }
     },
@@ -47,7 +48,7 @@
     // "forwardPorts": [],
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "pip3 install --user -r requirements.txt",
-    "postCreateCommand": "virtualenv ~/.venv && make install && echo 'source ~/.venv/bin/activate' >> ~/.bashrc",
+    "postCreateCommand": "bash setup.sh && virtualenv ~/.venv && make install && echo 'source ~/.venv/bin/activate' >> ~/.bashrc",
     // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "vscode"
 }
