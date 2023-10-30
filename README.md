@@ -2,7 +2,7 @@
 
 *Status Badges*
 
-[![Build](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/01_Install.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/01_Install.yml) [![Lint](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/03_Lint.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/03_Lint.yml) [![Black Formatter](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/02_Format.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/02_Format.yml) [![Test](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/04_Test.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/04_Test.yml)
+[![Build](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/01_Install.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/01_Install.yml) [![Lint](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/03_Lint.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/03_Lint.yml) [![Black Formatter](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/02_Format.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/02_Format.yml) [![Test](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/04_Test.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/04_Test.yml) [![Build and Test](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/05_Rust.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/workflows/05_Rust.yml)
 
 
 ## 1. Rust Source Code
@@ -11,7 +11,15 @@ The `main.rs` code in the `Rust_Codes` folder demonstrates Rust's syntax for dec
 ## 2. Using Github Copilot
 ## 3. SQLite Database 
 CRUD/ETL operations on the iris dataset are being performed using the python files (extract, transform_load, update, delete, and query) in the `ETL_Source` part of the `Codes` folder.  
-## 4. Optimized Rust Binary
+## 4. Optimized Rust Binary [Download Binary](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/releases/latest/download/my-binary)
+
+To use this project, follow these steps:
+
+1. Clone the repository
+2. Build the binary using `cargo build --release`
+3. Run the binary using `./target/release/my-binary`
+
+
 ## 5. README
 ## 6. Github Actions
 Status badges for the workflows can be found at the top of the README file
