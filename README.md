@@ -28,6 +28,8 @@ To use this project, follow these steps:
 
 
 ## 5. README
+![Repo Architecture](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/blob/d61be0e6363a2cec26a2fe924e71f7be25da0f11/Resources/Repo_Architecture.drawio.png)
+
 ## 6. Github Actions
 Status badges for the workflows can be found at the top of the README file
 ## 7. Video Demo
