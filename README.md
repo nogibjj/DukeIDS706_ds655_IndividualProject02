@@ -19,6 +19,7 @@ CRUD/ETL operations on the iris dataset are being performed using the python fil
 
 ## 4. Optimized Rust Binary 
 [Download Binary](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/raw/main/Rust_Codes/target/release/my-binary)
+[![Download Binary](https://img.shields.io/badge/download-binary-blue)](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/actions/artifacts)
 
 To use this project, follow these steps:
 
@@ -32,6 +33,7 @@ To use this project, follow these steps:
 
 ## 6. Github Actions
 Status badges for the workflows can be found at the top of the README file
+
 ## 7. Video Demo
 Repo Summary video - [Link]()
 
