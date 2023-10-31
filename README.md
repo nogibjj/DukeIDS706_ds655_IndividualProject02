@@ -9,8 +9,14 @@
 The `main.rs` code in the `Rust_Codes` folder demonstrates Rust's syntax for declaring variables, constants, arrays, vectors, structs, enums, and functions. It also demonstrates Rust's unique features such as type inference, mutability, shadowing, and pattern matching.
 
 ## 2. Using Github Copilot
+I used Github Copilot for setting up the Rust environment
+![Copilot Conversation](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/blob/e262f63c6d0e16ca0e3ff5b2701504c76f644bb0/Resources/1030%20-%20Copilot.png)
+
 ## 3. SQLite Database 
-CRUD/ETL operations on the iris dataset are being performed using the python files (extract, transform_load, update, delete, and query) in the `ETL_Source` part of the `Codes` folder.  
+CRUD/ETL operations on the iris dataset are being performed using the python files (extract, transform_load, update, delete, and query) in the `ETL_Source` part of the `Codes` folder. 
+
+![SQLite Output](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/blob/e262f63c6d0e16ca0e3ff5b2701504c76f644bb0/Resources/1030%20Screenshot%20SQLite.png)
+
 ## 4. Optimized Rust Binary 
 [Download Binary](https://github.com/nogibjj/DukeIDS706_ds655_IndividualProject02/raw/main/Rust_Codes/target/release/my-binary)
 
