@@ -113,20 +113,36 @@ fn query(db: &str) -> Result<(), Box<dyn Error>> {
 
     let conn = Connection::open(db)?;
 
-    let mut stmt4 = conn.prepare(&format!("SELECT * FROM {} LIMIT 5", tablename))?;
-    let rows = stmt4.query_map(params![], |row| {
-        let value: String = row.get(0)?;
-        Ok(value)
-    })?;
+    // Get column names
+    let mut stmt = conn.prepare(&format!("PRAGMA table_info({})", tablename))?;
+    let column_names: Result<Vec<String>, _> = stmt.query_map(params![], |row| {
+        let name: String = row.get(1)?; // The column name is in the second column of the result set
+        Ok(name)
+    })?.collect();
+    let column_names = column_names?;
 
-    println!("Top 5 rows of the {} table:", tablename);
+    // Prepare the SELECT * statement
+    let mut stmt = conn.prepare(&format!("SELECT * FROM {} LIMIT 5", tablename))?;
+
+    let rows = stmt.query_map(params![], |row| {
+        let col1: String = row.get(0)?; // sepal.length
+        let col2: String = row.get(1)?; // sepal.width
+        let col3: String = row.get(2)?; // petal.length
+        let col4: String = row.get(3)?; // petal.width
+        let col5: String = row.get(4)?; // variety
+        Ok((col1, col2, col3, col4, col5))
+    })?;
     
     let mut table = Table::new();
-    for row in rows {
-        println!("row: {:?}", row);
+    
+    for row_result in rows.skip(1) {
+        let (col1, col2, col3, col4, col5) = row_result?;
+        let row = Row::new(vec![Cell::new(&col1), Cell::new(&col2), Cell::new(&col3), Cell::new(&col4), Cell::new(&col5)]);
+        table.add_row(row);
     }
+    
     table.printstd();
-
+    
     Ok(())
 }
 
@@ -145,7 +161,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     // load("./data/GroceryDB.csv")?;
 
     // db_update("GroceryDB.db", "id")?;
-    db_update("Iris_Data.db", "petal_length")?;
+    // db_update("Iris_Data.db", "petal_length")?;
 
     // query("GroceryDB.db")?;
     query("Iris_Data.db")?;
