@@ -43,7 +43,7 @@ Status badges for the workflows can be found at the top of the README file
     * -> python main.py --step 4 for advanced query
      
 ## 8. Video Demo
-Repo Summary video - [Link]()
+Repo Summary video - [Link](https://clipchamp.com/watch/Ez8lMVUQZhm)
 
 
 
