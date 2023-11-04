@@ -15,17 +15,23 @@ args = parser.parse_args()
 # Extract
 if args.step == 1:
     print("Extracting data...")
-    extract()
+    extract("https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv","../data/Iris_Data.csv",)
 
 # Transform and load
 elif args.step == 2:
     print("Transforming data...")
-    load()
+    load(extract(
+                    "https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv",
+                    "../data/Iris_Data.csv",
+                ))
 
 # Query
 elif args.step == 3:
     print("Querying data...")
-    query()
+    query(    load(extract(
+                    "https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv",
+                    "../data/Iris_Data.csv",
+                )))
 
 else:
     print("Invalid step number")
