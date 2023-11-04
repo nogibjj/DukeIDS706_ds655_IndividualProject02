@@ -34,7 +34,15 @@ To use this project, follow these steps:
 ## 6. Github Actions
 Status badges for the workflows can be found at the top of the README file
 
-## 7. Video Demo
+## 7. CLI (Command Line Interface)
+* Convert the main.py into a command-line tool that lets you run each step independantly
+
+    * -> python main.py --step 1 to extract data
+    * -> python main.py --step 2 to load data
+    * -> python main.py --step 3 to query data
+    * -> python main.py --step 4 for advanced query
+     
+## 8. Video Demo
 Repo Summary video - [Link]()
 
 
